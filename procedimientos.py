@@ -31,14 +31,18 @@ def p5():
     print(" Opción 5 ")
     radio=0
     altura=0
-    area_cilindro=0
+    v_cilindro=0
     area_circulo=0
     radio=float(input("Ingrese el radio: "))
     altura=float(input("Ingrese la altura: "))
-    area_circulo= math.pi * (radio**2)
+    area_circulo=area(radio)
     print("El area del círculo  es:{:.2f}".format(area_circulo))
-    area_cilindro=2*math.pi*radio*(radio+altura)
-    print("El area del cílindro  es:{:.2f}".format(area_cilindro))
+    v_cilindro=area_circulo*altura
+    print("El Volumen del cílindro  es:{:.2f}".format(v_cilindro))
+
+def area(radio):
+    return math.pi * (radio**2)
+
 #///////////////////////////////////////////////////
 def p6(lista_numeros):
     sumatoria=0

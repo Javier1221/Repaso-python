@@ -18,7 +18,7 @@ if __name__ == "__main__":
         print("| 10-Numero que es par o impar               |")
         print("| 11-Salir                                   |")
         print("______________________________________________")
-        menu=int(input("Ingrese el numero="))
+        menu=int(input("Ingrese el numero ="))
         if menu==1:
             llamado.p1()
         elif menu==2:
@@ -35,7 +35,7 @@ if __name__ == "__main__":
         elif menu==6:
             print(" Opción 6 ")
             os.system("cls")
-            cantidad=int(input("Ingrese la cantidad de numeros que agregara en la lista"))
+            cantidad=int(input("Ingrese la cantidad de numeros que agregara en la lista: "))
             lista=[]
             for i in range(0,cantidad):
                 numero=int(input("Ingrese el valor "+str(i+1)+" de la lista :"))
